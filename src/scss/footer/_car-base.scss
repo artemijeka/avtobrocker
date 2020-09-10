@@ -1,0 +1,16 @@
+.car-base {
+  margin-top: 50px;
+  background-color: #FFDD2E;
+    &__title {
+        text-align: center;
+        padding-top: 70px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 110%;
+        /* or 40px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #252423;
+    }
+}

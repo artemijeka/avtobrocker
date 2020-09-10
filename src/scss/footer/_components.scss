@@ -1,0 +1,72 @@
+.page {
+    &-title,
+    &-subtitle {
+       
+        max-width: 15em;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 105%;
+        /* or 58px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #252423;
+    }
+    &-title {
+        margin: 49px auto 0;
+    }
+    &-subtitle {
+        margin: -105px auto 0;
+        position: relative;
+    }
+}
+
+.figures {
+    margin: 58px auto 0;
+    display: flex;
+    max-width: 1150px;
+    position: relative;
+    z-index: 9;
+    &__item {
+        &-number {
+            font-weight: bold;
+            font-size: 158px;
+            line-height: 110%;
+            /* identical to box height, or 174px */
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+            color: #EDEDED;
+        }
+        &-text {
+            display: inline-block;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 110%;
+            /* or 22px */
+            letter-spacing: 0.015em;
+            color: #252423;
+            position: relative;
+            bottom: 128px;
+            &._one {
+                max-width: 237px;
+                left: 118px;
+            }
+            &._two {
+                max-width: 223px;
+                left: 90px;
+            }
+            &._three {
+                max-width: 305px;
+                left: 90px;
+            }
+        }
+    }
+}
+
+.park-schema {
+    margin: auto;
+    display: block;
+    max-width: 1676px;
+    width: 100%;
+    margin-top: -220px;
+}
