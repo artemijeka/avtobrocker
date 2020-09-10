@@ -122,7 +122,7 @@ gulp.task('pug', function () {
 gulp.task('minhtml', function () {
     return gulp.src(SRC.HTML)
         .pipe(htmlmin({
-            collapseWhitespace: true,
+            // collapseWhitespace: true,
             removeComments: true
         }))
         .pipe(gulp.dest(DEV.ROOT));

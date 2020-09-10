@@ -1,6 +1,6 @@
 .car-base {
-  margin-top: 50px;
-  background-color: #FFDD2E;
+    margin-top: 50px;
+    background-color: #FFDD2E;
     &__title {
         text-align: center;
         padding-top: 70px;
@@ -13,4 +13,145 @@
         text-transform: uppercase;
         color: #252423;
     }
+    &__card {
+        margin: 30px 15px;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 40px;
+        height: 100%;
+        width: 800px;
+        max-height: 395px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        &-right-side {
+            width: 45%;
+            display: inline-block;
+        }
+        &-img {
+            width: 400px!important;
+            height: 300px!important;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 0.7em;
+            /* or 33px */
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+            color: #252423;
+        }
+        &-price {
+            margin-top: 20px;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 0.7em;
+            /* or 33px */
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+            color: #252423;
+        }
+        &-credit {
+            margin-top: 11px;
+            display: inline-block;
+            padding: 5px 8px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 110%;
+            /* or 18px */
+            letter-spacing: 0.015em;
+            color: #FFFFFF;
+            background: #ED3237;
+            border-radius: 5px;
+        }
+        &-params {
+            margin-top: 20px;
+            padding: 0;
+            list-style-type: none;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 110%;
+            /* or 20px */
+            letter-spacing: 0.015em;
+            color: #252423;
+        }
+        &-btn {
+            display: inline-block;
+            width: 226px;
+            height: 50px;
+            background: #FFDD2E;
+            border-radius: 46px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 121%;
+            /* or 22px */
+            color: #000000;
+            position: absolute;
+            z-index: 9;
+            cursor: pointer;
+            &:before {
+                content: '';
+                left: 0;
+                display: inline-block;
+                width: 226px;
+                height: 57px;
+                background: #ffec8b;
+                -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, .15);
+                box-shadow: 1px 1px 20px rgba(0, 0, 0, .15);
+                border-radius: 46px;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+    &__all-cars {
+        margin: 40px auto 0;
+        display: block;
+        width: 370px;
+        height: 63px;
+        background: #E93136;
+        border-radius: 46px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 121%;
+        /* or 24px */
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+        &:after {
+            content: '';
+            display: block;
+            width: 368px;
+            height: 63px;
+            background: #FF6468;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 46px;
+        }
+    }
+}
+
+.owl-carousel button.owl-dot {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    margin: 0 4.5px;
+}
+
+.owl-dot.active span {
+    display: inline-block;
+    position: absolute;
+    background-color: #252423!important;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
 }
