@@ -1,0 +1,101 @@
+.cars {
+    margin-top: 65px;
+    &__line,
+    &__descr-box {
+        display: flex;
+        justify-content: space-between;
+        width: 1145px;
+        margin: auto;
+        text-align: center;
+    }
+    &__car,
+    &__descr {
+        width: 215px;
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &.o-10 {
+            opacity: 0.1;
+        }
+    }
+    &__car {
+        &_1 {
+            display: inline-block;
+            background-image: url(../img/car-1.png);
+        }
+        &_2 {
+            display: inline-block;
+            background-image: url(../img/car-2.png);
+        }
+        &_3 {
+            display: inline-block;
+            background-image: url(../img/car-3.png);
+        }
+        &_4 {
+            display: inline-block;
+            background-image: url(../img/car-4.png);
+        }
+    }
+    &__descr {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 110%;
+        /* or 22px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #010101;
+        strong {
+          display: block;
+            font-weight: bold;
+            font-size: 49px;
+            line-height: 110%;
+            /* or 54px */
+            text-align: center;
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+            color: #252423;
+        }
+    }
+    &__slider {
+        margin: 45px auto;
+        max-width: 1145px;
+        width: 100%;
+        height: 10px;
+        background: red;
+        border-radius: 5px;
+        display: block;
+        position: relative;
+        &:after {
+            content: '';
+            width: 90%;
+            display: inline-block;
+            border-radius: 4px;
+            height: 10px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            background-color: white;
+        }
+        &-btn {
+            width: 121px;
+            height: 59px;
+            background: #FF0000;
+            box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 52px;
+            transform: translateY(-27px);
+            cursor: pointer;
+            position: absolute;
+            left: 45px;
+            z-index: 1;
+            &-arrow {
+                display: inline-block;
+                width: 60px;
+                height: 23px;
+                background-image: url(../img/arrow.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

@@ -1,6 +1,8 @@
 .car-base {
     margin-top: 50px;
     background-color: #FFDD2E;
+    position: relative;
+    z-index: 1;
     &__title {
         text-align: center;
         padding-top: 70px;
