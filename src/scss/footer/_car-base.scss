@@ -11,7 +11,7 @@
         text-align: center;
         letter-spacing: 0.015em;
         text-transform: uppercase;
-        color: #252423;
+        color: $black;
     }
     &__card {
         margin: 30px 15px;
@@ -38,7 +38,7 @@
             /* or 33px */
             letter-spacing: 0.015em;
             text-transform: uppercase;
-            color: #252423;
+            color: $black;
         }
         &-price {
             margin-top: 20px;
@@ -48,7 +48,7 @@
             /* or 33px */
             letter-spacing: 0.015em;
             text-transform: uppercase;
-            color: #252423;
+            color: $black;
         }
         &-credit {
             margin-top: 11px;
@@ -60,7 +60,7 @@
             /* or 18px */
             letter-spacing: 0.015em;
             color: #FFFFFF;
-            background: #ED3237;
+            background: $red;
             border-radius: 5px;
         }
         &-params {
@@ -72,7 +72,7 @@
             line-height: 110%;
             /* or 20px */
             letter-spacing: 0.015em;
-            color: #252423;
+            color: $black;
         }
         &-btn {
             display: inline-block;
@@ -148,7 +148,7 @@
 .owl-dot.active span {
     display: inline-block;
     position: absolute;
-    background-color: #252423!important;
+    background-color: $black!important;
     width: 11px;
     height: 11px;
     border-radius: 50%;

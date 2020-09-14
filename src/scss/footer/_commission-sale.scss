@@ -1,0 +1,60 @@
+.commission-sale {
+    &__container {
+        max-width: 1690px;
+        width: 100%;
+        margin: auto;
+    }
+    &__decor-img {
+        z-index: -1;
+        background-image: url(../img/idea.png);
+        display: inline-block;
+        width: 723px;
+        height: 603px;
+        position: relative;
+        top: -100px;
+        float: left;
+    }
+    &__title {
+        margin-top: 86px;
+        margin-left: -60px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 0.9em;
+        /* or 58px */
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &__subtitle {
+        margin-top: 26px;
+        margin-left: 105px;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 0.9em;
+        /* identical to box height, or 40px */
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: $black;
+    }
+    &__list {
+        margin: 58px 105px 0;
+        width: 432px;
+        list-style-type: none;
+        display: inline-block;
+        &-item {
+            margin-bottom: 22px;
+            position: relative;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 27px;
+                height: 20px;
+                background-image: url(../img/v.svg);
+                position: absolute;
+                left: -40px;
+            }
+        }
+    }
+}

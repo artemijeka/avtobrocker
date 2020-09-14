@@ -1,7 +1,6 @@
 .page {
     &-title,
     &-subtitle {
-       
         max-width: 15em;
         font-weight: bold;
         font-size: 55px;
@@ -10,7 +9,7 @@
         text-align: center;
         letter-spacing: 0.015em;
         text-transform: uppercase;
-        color: #252423;
+        color: $black;
     }
     &-title {
         margin: 49px auto 0;
@@ -44,7 +43,7 @@
             line-height: 110%;
             /* or 22px */
             letter-spacing: 0.015em;
-            color: #252423;
+            color: $black;
             position: relative;
             bottom: 128px;
             &._one {
