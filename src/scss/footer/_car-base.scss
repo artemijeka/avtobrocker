@@ -93,6 +93,11 @@
             cursor: pointer;
             border-bottom: 6px solid #ffec8b;
             box-shadow: 1px 1px 20px rgba(0, 0, 0, .15);
+            transition: 300ms;
+            &:hover {
+                border-bottom: 10px solid #ffec8b;
+                box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.35);
+            }
         }
     }
     &__all-cars {
@@ -109,9 +114,13 @@
         text-align: center;
         color: #FFFFFF;
         box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
-        
         border-bottom: 6px solid #FF6468;
         cursor: pointer;
+        transition: 300ms;
+        &:hover {
+            border-bottom: 10px solid #FF6468;
+            box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.35);
+        }
     }
 }
 
