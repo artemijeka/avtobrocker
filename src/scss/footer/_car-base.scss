@@ -4,8 +4,14 @@
     position: relative;
     z-index: 1;
     padding-bottom: 54px;
+    @media (max-width: 992px) {
+        margin-top: 54px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 54px;
+    }
     @media (max-width: 576px) {
-      margin-top: 30px;
+        margin-top: 30px;
     }
     &__title {
         text-align: center;
@@ -19,35 +25,41 @@
         text-transform: uppercase;
         color: $black;
         @media (max-width: 576px) {
+            font-size: 30px;
             padding-top: 40px;
-          }
+        }
+        @media (max-width: 575.98px) {
+            font-size: 26px;
+        }
     }
     &__card {
         margin: 30px 15px;
         display: inline-flex;
+        -webkit-box-pack: justify;
         justify-content: space-between;
-        padding: 40px;
-        height: 100%;
+        max-width: 800px;
         width: 800px;
-        max-height: 395px;
-        background: #FFFFFF;
+        height: 395px;
+        background: #fff;
         border-radius: 20px;
         &-right-side {
+            margin-top: 40px;
             width: 45%;
             display: inline-block;
         }
         &-img {
+            margin: 40px 35px 0 40px;
             width: 400px!important;
             height: 300px!important;
         }
         &-title {
-            font-weight: bold;
+            font-weight: 700;
             font-size: 30px;
-            line-height: 0.7em;
-            /* or 33px */
-            letter-spacing: 0.015em;
+            line-height: 0.9em;
+            letter-spacing: .015em;
             text-transform: uppercase;
-            color: $black;
+            color: #252423;
+            height: 21px;
         }
         &-price {
             margin-top: 20px;
@@ -129,9 +141,6 @@
         }
     }
 }
-
-
-
 
 .owl-carousel button.owl-dot {
     width: 21px;

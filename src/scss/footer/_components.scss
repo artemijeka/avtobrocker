@@ -1,6 +1,7 @@
 .page {
     &-title,
     &-subtitle {
+        height: 100px;
         max-width: 15em;
         font-weight: bold;
         font-size: 55px;
@@ -10,7 +11,10 @@
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: $black;
+        position: relative;
+        z-index: 999;
         @media (max-width: 992px) {
+            height: 77px;
             font-size: 42px;
         }
         @media (max-width: 768px) {
@@ -20,9 +24,6 @@
             font-size: 30px;
         }
         @media (max-width: 575.98px) {
-            font-size: calc(16px + 3.1vw);
-        }
-        @media (max-width: 320px) {
             font-size: 26px;
         }
     }
@@ -45,14 +46,10 @@
         }
     }
     &-subtitle {
+        width: 100%;
         margin: auto;
-        position: relative;
-        top: -4.8vw;
-        @media (max-width: 768px) {
-            top: -2.2vw;
-        }
+        @media (max-width: 768px) {}
         @media (max-width: 575.98px) {
-            top: -1vw;
             width: 8em;
         }
     }
