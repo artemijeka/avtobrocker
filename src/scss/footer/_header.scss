@@ -1,52 +1,219 @@
 .header {
-    max-width: 1150px;
+    margin-top: 27px;
     height: 78px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__menu-btn {
-        width: 100%;
-        height: 22px;
-        cursor: pointer;
-        max-width: 270px;
-        &-decor {
-            height: 0;
-            display: inline-block;
-            border-bottom: 4px solid #000;
-            width: 37px;
-            &:before {
-                content: '';
-                height: 0;
-                display: inline-block;
-                border-bottom: 4px solid #000;
-                width: 37px;
+    @media (max-width: 992px) {
+        height: 80px;
+    }
+    @media (max-width: 768px) {
+        height: 78px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 0;
+        flex-wrap: wrap;
+        height: 154px;
+    }
+    &__logo {
+        @media (max-width: 768px) {
+            width: 166px;
+            height: 40px;
+        }
+        &-link {
+            @media (max-width: 576px) {
+                width: 100%;
+                top: 0;
+                height: 78px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
             }
-            &:after {
-                content: '';
-                height: 0;
-                display: inline-block;
-                border-bottom: 4px solid #000;
-                width: 37px;
+        }
+    }
+    &__menu {
+        background-color: #e5313d;
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        z-index: 999;
+        left: 100%;
+        bottom: 0;
+        transition: 500ms ease-in-out;
+        &.open {
+            left: 0;
+        }
+        &-btn {
+            &-open {
+                display: inline-flex;
+                width: 100%;
+                height: 37px;
+                cursor: pointer;
+                max-width: 270px;
                 position: relative;
-                top: -8px;
+                @media (max-width: 992px) {
+                    max-width: 253px;
+                }
+                @media (max-width: 768px) {
+                    max-width: 201px;
+                }
+                @media (max-width: 576px) {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 78px;
+                    max-width: 100px;
+                    position: absolute;
+                    top: 0;
+                }
+                @media (max-width: 575.98px) {
+                    max-width: 80px;
+                }
+                i {
+                    height: 0;
+                    display: inline-block;
+                    border-bottom: 4px solid #000;
+                    width: 37px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: 300ms ease-in-out;
+
+                    &:before {
+                        content: '';
+                        height: 0;
+                        display: inline-block;
+                        border-bottom: 4px solid #000;
+                        width: 37px;
+                        position: relative;
+                        top: -20px;
+                        transition: 300ms ease-in-out;
+                    }
+                    &:after {
+                        content: '';
+                        height: 0;
+                        display: inline-block;
+                        border-bottom: 4px solid #000;
+                        width: 37px;
+                        position: relative;
+                        top: -8px;
+                        position: relative;
+                        top: -15px;
+                        transition: 300ms ease-in-out;
+                    }
+                }
+                &:hover {
+                    i:before {
+                        transform: rotate(-35deg) translate(-12px, 6px);
+                        transform-origin: left top;
+                        transition: 300ms ease-in-out;
+                        width: 24px;
+                    }
+                    i:after {
+                        transform: rotate(35deg) translate(-12px, -6px);
+                        transform-origin: left bottom;
+                        transition: 300ms ease-in-out;
+                        width: 24px;
+                    }
+                }
+            }
+            &-close {
+                font-size: 72px;
+                width: 72px;
+                height: 72px;
+                color: #fff;
+                line-height: 0.75em;
+                font-weight: 500;
+                padding: 16px;
+                transform-origin: center;
+                cursor: pointer;
+                &:hover {
+                    transform: rotate(180deg);
+                    transition: 300ms ease-in-out;
+                }
+                &:active {
+                    transform: rotate(-540deg);
+                    transition: 600ms ease-in-out;
+                }
+            }
+        }
+        &-list {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            &-services {
+                margin-top: -6px;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        &-item {
+            width: 33%;
+            &_100 {
+                &-mt1 {
+                    width: 100%;
+                    margin-top: 45px;
+                }
+                &-mt2 {
+                    width: 100%;
+                    margin-top: 90px;
+                }
+            }
+            &-service {
+                margin-top: 37px;
+                width: 33%;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 22px;
+                color: #FFFFFF;
             }
         }
     }
     &__contacts {
         max-width: 270px;
+        @media (max-width: 992px) {
+            max-width: 253px;
+        }
+        @media (max-width: 768px) {
+            max-width: 201px;
+        }
+        @media (max-width: 576px) {
+            margin-top: 10px;
+            max-width: 100%;
+            width: 100%;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
         &-phone {
             font-weight: bold;
             font-size: 24px;
             line-height: 28px;
             color: #000000;
+            // @media (max-width: 768px) {
+            // }
         }
         &-address {
-          max-width: 270px;
+            max-width: 270px;
             font-weight: normal;
             font-size: 14px;
             line-height: 16px;
             color: #000000;
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+            @media (max-width: 576px) {
+                margin: auto;
+            }
         }
     }
 }

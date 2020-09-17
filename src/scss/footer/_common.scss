@@ -4,7 +4,18 @@ html {
 
 body {
     overflow-x: hidden;
-    margin-top: 27px;
     font-family: RotondaC;
     font-style: normal;
+}
+
+.container {
+    margin: auto;
+    max-width: 1150px;
+    width: 100%;
+    @media (max-width: 992px) {
+        max-width: 932px;
+    }
+    @media (max-width: 768px) {
+        max-width: 693px;
+    }
 }

@@ -38,12 +38,42 @@
 
 <body>
 
-  <header class="header">
-    <span class="header__menu-btn">
-      <i class="header__menu-btn-decor"></i>
-    </span>
+  <header class="header container">
 
-    <a href="/"><img src="./img/logo.svg" alt="Автоброкер лого" class="header__logo"></a>
+    <button class="header__menu-btn-open" id="jsBtnOpenMenu">
+      <i></i>
+    </button>
+
+    <nav class="header__menu" id="jsMenu">
+      <div class="container">
+        <button class="header__menu-btn-close" id="jsCloseMenu">&#215;</button>
+
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a href="">Каталог авто</a></li>
+          <li class="header__menu-item"><a href="">Об Автоброкере</a></li>
+          <li class="header__menu-item"><a href="">Контакты</a></li>
+
+          <li class="header__menu-item header__menu-item_100-mt1"><a href="">Автокредит</a></li>
+          <li class="header__menu-item header__menu-item_100-mt2"><a href="">Услуги</a>
+            <ul class="header__menu-list-services">
+              <li class="header__menu-item-service"><a href="">Срочная продажа</a></li>
+              <li class="header__menu-item-service"><a href="">Комиссионная продажа</a></li>
+              <li class="header__menu-item-service"><a href="">Предпродажная подготовка</a></li>
+              <li class="header__menu-item-service"><a href="">Оценить авто</a></li>
+              <li class="header__menu-item-service"><a href="">Обмен (trade-in) </a></li>
+              <li class="header__menu-item-service"><a href="">ОСАГО</a></li>
+              <li class="header__menu-item-service"><a href="">Продажа с гарантией и обеспечительным платежом</a></li>
+              <li class="header__menu-item-service"><a href="">Онлайн комиссия</a></li>
+              <li class="header__menu-item-service"><a href="">КАСКО</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <a href="/" class="header__logo-link">
+      <img src="./img/logo.svg" alt="Автоброкер лого" class="header__logo">
+    </a>
 
 
     <div class="header__contacts">
@@ -59,25 +89,47 @@
 
     <h1 class="page-title">новый формат<br>продажи авто с пробегом</h1>
 
-    <div class="figures">
+    <div class="figures container">
       <div class="figures__item">
+        <!-- <div class="figures__item-box"> -->
         <span class="figures__item-number">150</span>
         <span class="figures__item-text _one">150 метров выставочного стенда по центральной улице Самары</span>
+        <!-- </div> -->
       </div>
       <div class="figures__item">
+        <!-- <div class="figures__item-box"> -->
         <span class="figures__item-number">35</span>
         <span class="figures__item-text _two">35 менеджеров будут работать над продажей вашего автомобиля</span>
+        <!-- </div> -->
       </div>
-      <div class="figures__thitem">
+      <div class="figures__item">
+        <!-- <div class="figures__item-box"> -->
         <span class="figures__item-number">20</span>
         <span class="figures__item-text _three">20 банков-партнеров принимают заявки на оформление кредита для вашего
           автомобиля</span>
+        <!-- </div> -->
       </div>
-    </div>
+    </div><!-- /.figures -->
 
-    <img src="./img/schema.jpg" alt="Схема нашего парка" class="park-schema">
+
+
+    <section class="description">
+      <span class="description__item _camera"><i></i><span>Ведется видеоконтроль и видеофиксация</span></span>
+      <span class="description__item _parking"><i></i><span>Бесплатная стоянка</span></span>
+      <span class="description__item _secure"><i></i><span>Охрана ЧОП</span></span>
+      <span class="description__item _distance "><i></i><span>Автомобили находятся друг от друга на безопасном расстоянии</span></span>
+      <span class="description__item _personal"><i></i><span>Персональный менеджер и техник</span></span>
+      <span class="description__item _responsible"><i></i><span>Мы несем полную материальную ответственность за автомобиль</span></span>
+    </section>
+
+
+
+    <div class="park-schema"></div>
+
+
 
     <h2 class="page-subtitle">Продажа авто с пробегом<br>в самаре</h2>
+
 
 
     <section class="car-base">
@@ -236,33 +288,38 @@
 
     </section><!-- /.car-base -->
 
-    
+
 
     <section class="target-area">
 
       <article class="commission-sale">
         <div class="commission-sale__container">
-          <span class="commission-sale__decor-img"></span>  
+          <span class="commission-sale__decor-img"></span>
           <h3 class="commission-sale__title">комиссионная продажа</h3>
           <h4 class="commission-sale__subtitle">оптимальное решение!</h4>
           <ul class="commission-sale__list">
-            <li class="commission-sale__list-item">«Комиссионная продажа» с обеспечением по графику. Безопасно, надежно, выгодно. </li>
-            <li class="commission-sale__list-item">Эта услуга максимально открыта, гарантирует продажу в течение 5 недель по максимальной рыночной цене в условиях рынка. </li>
-            <li class="commission-sale__list-item">Самое главное Вы получаете обеспечительный платеж до 95% от стоимости сразу в кассе.</li>
+            <li class="commission-sale__list-item">«Комиссионная продажа» с обеспечением по графику. Безопасно, надежно,
+              выгодно. </li>
+            <li class="commission-sale__list-item">Эта услуга максимально открыта, гарантирует продажу в течение 5
+              недель по максимальной рыночной цене в условиях рынка. </li>
+            <li class="commission-sale__list-item">Самое главное Вы получаете обеспечительный платеж до 95% от стоимости
+              сразу в кассе.</li>
           </ul>
         </div>
       </article>
-  
-  
+
+
       <article class="attention">
         <p class="attention__text">
-          <span>Мы с полной уверенностью заявляем что комиссионная продажа для Вас выгоднее, чем сдать машину скупщикам авто! </span>
+          <span>Мы с полной уверенностью заявляем что комиссионная продажа для Вас выгоднее, чем сдать машину скупщикам
+            авто! </span>
           <br>
-          <span>Если у Вас есть хотя бы три дня на продажу автомобиля доверьте продажe нам и мы Вас удивим своими возможностями!</span>
+          <span>Если у Вас есть хотя бы три дня на продажу автомобиля доверьте продажe нам и мы Вас удивим своими
+            возможностями!</span>
       </article>
-  
-  
-  
+
+
+
       <article class="cars">
         <div class="cars__line">
           <span data-to="1" class="cars__car cars__car_1"></span>
@@ -270,17 +327,22 @@
           <span data-to="3" class="cars__car cars__car_3 o-10"></span>
           <span data-to="4" class="cars__car cars__car_4 o-10"></span>
         </div>
-        
+
         <div class="cars__slider">
-          <button class="cars__slider-btn" id="jsBtnNextStage" data-to="2" data-position="1"><i class="cars__slider-btn-arrow"></i></button>
+          <button class="cars__slider-btn" id="jsBtnNextStage" data-to="2" data-position="1"><i
+              class="cars__slider-btn-arrow"></i></button>
           <span class="cars__slider_white" id="jsSliderWhite" data-position="1"></span>
         </div>
 
         <div class="cars__descr-box">
-          <span data-to="1" class="cars__descr 1">Есть автомобили, которые продаем в течение <strong>1 часа</strong></span>
-          <span data-to="2" class="cars__descr 2 o-10">Почти новые автомобили продаются в течение <strong>6 дней</strong></span>
-          <span data-to="3" class="cars__descr 3 o-10">Автомобили с пробегом до 100 000 км продаем за <strong>9 дней</strong></span>
-          <span data-to="4" class="cars__descr 4 o-10">В среднем мы продаем автомобили за <strong>12 дней</strong></span>
+          <span data-to="1" class="cars__descr 1">Есть автомобили, которые продаем в течение <strong>1
+              часа</strong></span>
+          <span data-to="2" class="cars__descr 2 o-10">Почти новые автомобили продаются в течение <strong>6
+              дней</strong></span>
+          <span data-to="3" class="cars__descr 3 o-10">Автомобили с пробегом до 100 000 км продаем за <strong>9
+              дней</strong></span>
+          <span data-to="4" class="cars__descr 4 o-10">В среднем мы продаем автомобили за <strong>12
+              дней</strong></span>
         </div>
 
         <button class="cars__btn-goal">Найти или продать автомобиль</button>

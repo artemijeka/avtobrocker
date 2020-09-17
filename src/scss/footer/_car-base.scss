@@ -4,6 +4,9 @@
     position: relative;
     z-index: 1;
     padding-bottom: 54px;
+    @media (max-width: 576px) {
+      margin-top: 30px;
+    }
     &__title {
         text-align: center;
         padding-top: 70px;
@@ -15,6 +18,9 @@
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: $black;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+          }
     }
     &__card {
         margin: 30px 15px;
@@ -123,6 +129,9 @@
         }
     }
 }
+
+
+
 
 .owl-carousel button.owl-dot {
     width: 21px;

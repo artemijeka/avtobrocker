@@ -1,13 +1,17 @@
-@import 'common';
 @import 'vars';
-@import 'header';
+@import 'common';
 @import 'components';
+
+@import 'header';
+@import 'park-schema';
+@import 'description';
 @import 'car-base';
 
 
 .target-area {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #E9E9E9;
 }
+
 @import 'commission-sale';
 @import 'attention';
 @import 'cars';
