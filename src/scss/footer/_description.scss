@@ -4,67 +4,74 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        &__item {
-          margin-top: 40px;
-            max-width: 324px;
-            width: 90%;
-            height: auto;
-            display: inline-flex;
-            span {
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 110%;
-                /* or 20px */
-                letter-spacing: 0.015em;
-                color: #252423;
-                @media (max-width: 575.98px) {
-                    max-width: 424px;
-                }
-            }
-            i {
-              margin-right: 20px;
-              display: inline-block;
-              width: 100vw;
-              max-width: 75px;
-              max-height: 55px;
-              height: 100vw;
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: contain;
-            }
-            &._camera {
-                i {
-                    background-image: url(../img/icons/camera.svg);
-                }
-            }
-            &._parking {
-                i {
-                    background-image: url(../img/icons/parking.svg);
-                }
-            }
-            &._secure {
-                i {
-                    background-image: url(../img/icons/secure.svg);
-                }
-            }
-            &._distance {
-                i {
-                    background-image: url(../img/icons/distance.svg);
-                }
-            }
-            &._personal {
-                i {
-                    background-image: url(../img/icons/personal.svg);
-                }
-            }
-            &._responsible {
-                i {
-                    background-image: url(../img/icons/responsible.svg);
-                }
+    }
+
+    @media (max-width: 575.98px) {
+        margin-top: 25px;
+    }
+    &__item {
+        margin-top: 40px;
+        max-width: 329px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        @media (max-width: 576px) {
+            max-width: 508px;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 110%;
+            /* or 20px */
+            letter-spacing: 0.015em;
+            color: #252423;
+            @media (max-width: 575.98px) {
+                max-width: 424px;
             }
         }
-    }
-    @media (max-width: 575.98px) {
-      margin-top: 25px;
+        i {
+            margin-right: 20px;
+            display: inline-block;
+            width: 100vw;
+            max-width: 75px;
+            max-height: 55px;
+            height: 100vw;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &._camera {
+            i {
+                background-image: url(../img/icons/camera.svg);
+            }
+        }
+        &._parking {
+            i {
+                background-image: url(../img/icons/parking.svg);
+            }
+        }
+        &._secure {
+            i {
+                background-image: url(../img/icons/secure.svg);
+            }
+        }
+        &._distance {
+            i {
+                background-image: url(../img/icons/distance.svg);
+            }
+        }
+        &._personal {
+            i {
+                background-image: url(../img/icons/personal.svg);
+            }
+        }
+        &._responsible {
+            i {
+                background-image: url(../img/icons/responsible.svg);
+            }
+        }
     }
 }
