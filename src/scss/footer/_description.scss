@@ -1,5 +1,6 @@
 .description {
     display: none;
+    
     @media (max-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -9,6 +10,7 @@
     @media (max-width: 575.98px) {
         margin-top: 25px;
     }
+    
     &__item {
         margin-top: 40px;
         max-width: 329px;
