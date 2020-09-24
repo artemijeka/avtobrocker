@@ -1,5 +1,19 @@
 .commission-sale {
     min-height: 505px;
+    @media (max-width: 1440px) {
+        min-height: 405px;
+    }
+    @media (max-width: 1199px) {
+        min-height: 440px;
+    }
+    @media (max-width: 992px) {
+        min-height: 400px;
+      
+    }
+    @media (max-width: 768px) {
+        min-height: unset;
+      
+    }
     &__container {
         max-width: 1690px;
         width: 100%;
@@ -10,21 +24,48 @@
         background-image: url(../img/idea.png);
         background-size: contain;
         background-repeat: no-repeat;
+        background-position-x: right;
         display: inline-block;
-        width: 740px;
+        width: 50%;
         height: 603px;
         position: relative;
         top: -100px;
+        right: 70px;
         float: left;
+        @media (max-width: 1440px) {
+            height: 477px;
+            right: 0;
+            top: -80px;
+        }
         @media (max-width: 1199px) {
-            width: 584px;
-            height: 480px;
+            top: -3vw;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__right {
+        margin-top: 86px;
+        float: right;
+        width: 50%;
+        @media (max-width: 1440px) {
+            margin-top: 67px;
+        }
+        @media (max-width: 992px) {
+            margin-top: 63px;
+        }
+        @media (max-width: 768px) {
+            width: 90%;
+            max-width: 503px;
+            margin: 50px auto 0;
+            float: unset;
+        }
+        @media (max-width: 576px) {
         }
     }
     &__title {
-        margin-top: 86px;
-        margin-left: -60px;
-        display: inline-block;
+        margin-left: -170px;
+        display: block;
         font-weight: bold;
         font-size: 55px;
         line-height: 0.9em;
@@ -32,37 +73,81 @@
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: $black;
-        @media (max-width: 1199px) {
-            width: 453px;
+        @media (max-width: 1440px) {
+            margin-left: 0;
+            width: 9em;
             font-size: 42px;
+        }
+        @media (max-width: 992px) {
+            font-size: 36px;
+        }
+        @media (max-width: 768px) {
+            font-size: 30px;
+            width: 100%;
+            max-width: 503px;
+        }
+        @media (max-width: 576px) {
+            font-size: 26px;
         }
     }
     &__subtitle {
         margin-top: 26px;
-        margin-left: 105px;
-        display: inline-block;
+        margin-left: 0;
+        display: block;
         font-weight: normal;
         font-size: 36px;
         line-height: 0.9em;
-        /* identical to box height, or 40px */
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: $black;
-        @media (max-width: 1199px) {
+        @media (max-width: 1440px) {
+            margin-left: 0;
             font-size: 30px;
+        }
+        @media (max-width: 992px) {
+            margin-top: 16px;
+        }
+        @media (max-width: 768px) {
+            font-size: 26px;
+            max-width: 503px;
+        }
+        @media (max-width: 576px) {
+            font-size: 24px;
         }
     }
     &__list {
-        margin: 58px 105px 0;
-        width: 432px;
+        margin: 58px 0 0 0;
+        max-width: 432px;
+        width: 100%;
         list-style-type: none;
         display: inline-block;
+        @media (max-width: 1440px) {
+            margin: 40px 0 0 0;
+        }
+        @media (max-width: 992px) {
+            margin-top: 25px;
+        }
+        @media (max-width: 768px) {
+            max-width: 463px;
+        }
+        @media (max-width: 576px) {
+            width: 90%;
+        }
         &-item {
             margin-bottom: 22px;
             position: relative;
             font-size: 20px;
-            @media (max-width: 1199px) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @media (max-width: 1440px) {
                 font-size: 16px;
+            }
+            @media (max-width: 992px) {
+                max-width: 324px;
+            }
+            @media (max-width: 768px) {
+                max-width: 100%;
             }
             &:before {
                 content: '';
@@ -72,6 +157,12 @@
                 background-image: url(../img/v.svg);
                 position: absolute;
                 left: -40px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                @media (max-width: 768px) {
+                    width: 22px;
+                    height: 16px;
+                }
             }
         }
     }

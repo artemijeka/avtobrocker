@@ -1,28 +1,50 @@
 .attention {
-    width: 753px;
-    height: 172px;
+    width: 100%;
+    height: 100vh;
+    max-width: 753px;
+    max-height: 172px;
     border: 4px solid #e10000;
     box-sizing: border-box;
     border-radius: 20px;
     margin: 35px auto 0;
     position: relative;
+    @media (max-width: 1440px) {
+        max-width: 608px;
+        max-height: 143px;
+    }
+    @media (max-width: 1199px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+        max-width: 510px;
+    }
     &__text {
         display: inline-block;
-        width: 100%;
+        width: auto;
         position: absolute;
         top: 0;
         left: 0;
         font-weight: bold;
         font-size: 20px;
         line-height: 110%;
-        /* or 22px */
         text-align: center;
         letter-spacing: 0.015em;
         color: #FF0000;
-        margin: 10px auto;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width: 1440px) {
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+          justify-content: center;
+        }
         span {
-          display: inline-block;
-          margin: 16px auto;
+            max-width: 92%;
+            display: inline-block;
         }
     }
 }
