@@ -1,5 +1,5 @@
 .attention {
-    width: 100%;
+    width: 95%;
     height: 100vh;
     max-width: 753px;
     max-height: 172px;
@@ -17,6 +17,9 @@
     }
     @media (max-width: 768px) {
         max-width: 510px;
+    }
+    @media (max-width: 400px) {
+        max-height: 185px;
     }
     &__text {
         display: inline-block;
