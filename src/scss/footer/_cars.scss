@@ -11,6 +11,9 @@
         right: 50%;
         border-bottom: 160px solid #fff;
         border-right: 50vw solid #ebebeb;
+        @media (max-width: 1200px) {
+            border-bottom: 150px solid #fff;
+        }
     }
     &::after {
         content: '';
@@ -21,6 +24,9 @@
         left: 50%;
         border-bottom: 160px solid #fff;
         border-left: 50vw solid #ebebeb;
+        @media (max-width: 1200px) {
+            border-bottom: 150px solid #fff;
+        }
     }
     &__line,
     &__descr-box {
@@ -30,6 +36,13 @@
         width: 99%;
         margin: auto;
         text-align: center;
+        @media (max-width: 1200px) {
+          max-width: 933px;
+        }
+        @media (max-width: 992px) {
+            position: relative;
+            left: 15%;
+        }
     }
     &__car,
     &__descr {
@@ -51,13 +64,15 @@
     &__car {
         display: inline-block;
         background-size: contain;
+        max-width: 172px;
+        max-height: 77px;
         @media (max-width: 1200px) {
-            max-width: 170px;
-            max-height: 70px;
+            max-width: 140px;
+            max-height: 62px;
         }
         @media (max-width: 992px) {
-            max-width: 142px;
-            max-height: 62px;
+            
+            
         }
         &_1 {
             background-image: url(../img/car-1.png);
@@ -83,6 +98,9 @@
         height: 2.1em;
         @media (max-width: 1200px) {
             font-size: 16px;
+        }
+        @media (max-width: 800px) {
+          font-size: 15px;
         }
         strong {
             margin-top: 18px;
@@ -114,12 +132,14 @@
         position: relative;
         @media (max-width: 1200px) {
             margin: 42px auto;
+            max-width: 933px;
         }
         @media (max-width: 992px) {
             margin: 45px auto;
+                left: 15%;
         }
         &_white {
-            width: 90%;
+            width: 100%;
             display: inline-block;
             border-radius: 4px;
             height: 10px;
@@ -139,6 +159,9 @@
             }
         }
         &-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             width: 121px;
             height: 59px;
             background: #FF0000;
@@ -150,14 +173,22 @@
             left: 0;
             z-index: 1;
             transition: 500ms ease-in-out;
+            @media (max-width: 1200px) {
+                width: 98px;
+                height: 48px;
+                transform: translateY(-21px);
+            }
             &[data-position='2'] {
                 left: 31%;
             }
             &[data-position='3'] {
-                left: 58%;
+                left: 59%;
             }
             &[data-position='4'] {
                 left: calc(100% - 120px);
+                @media (max-width: 1200px) {
+                    left: calc(100% - 98px);
+                }
             }
             &-arrow {
                 display: inline-block;
@@ -167,6 +198,10 @@
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+                @media (max-width: 1200px) {
+                    width: 51px;
+                    height: 22px;
+                }
             }
         }
     }
