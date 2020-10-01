@@ -7,8 +7,10 @@ https://www.figma.com/file/T4yOkVAXoG52NrcysVj58z
 
 node --version
 npm --version
-npm install gulp
 <!-- npm install -D -->
+npm install gulp
+npm install gulp -g <!-- Global -->
+npm install gulp -D <!-- save-Dev -->
 <!-- npm audit -->
 npm audit fix
 npm rebuild node-sass

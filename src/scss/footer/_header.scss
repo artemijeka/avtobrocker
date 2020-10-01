@@ -88,7 +88,7 @@
                         border-bottom: 4px solid #000;
                         width: 37px;
                         position: relative;
-                        top: -20px;
+                        top: -24px;
                         transition: 300ms ease-in-out;
                     }
                     &:after {
@@ -106,13 +106,13 @@
                 }
                 &:hover {
                     i:before {
-                        transform: rotate(-35deg) translate(-12px, 6px);
+                        transform: rotate(-35deg) translate(-14px, 7px);
                         transform-origin: left top;
                         transition: 300ms ease-in-out;
                         width: 24px;
                     }
                     i:after {
-                        transform: rotate(35deg) translate(-12px, -6px);
+                        transform: rotate(35deg) translate(-14px, -8px);
                         transform-origin: left bottom;
                         transition: 300ms ease-in-out;
                         width: 24px;
@@ -124,7 +124,7 @@
                 width: 72px;
                 height: 72px;
                 color: #fff;
-                line-height: 0.75em;
+                line-height: 0.55em;
                 font-weight: 500;
                 padding: 16px;
                 transform-origin: center;
