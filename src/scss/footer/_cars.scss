@@ -230,8 +230,8 @@
             width: 90%;
             display: inline-block;
             border-radius: 4px;
-            height: 10px;
-            top: 0;
+            height: 10.6px;
+            top: -0.3px;
             right: 0;
             position: absolute;
             background-color: white;
@@ -273,11 +273,8 @@
                 left: 58%;
             }
             &[data-position='4'] {
-                left: unset;
-                right: 5%;
+                left: 85%;
                 @media (max-width: 1200px) {
-                    left: unset;
-                    right: 5%;
                 }
                 i {
                     transform: rotate(-180deg);

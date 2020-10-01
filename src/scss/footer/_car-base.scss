@@ -77,26 +77,26 @@
         }
         &-img {
             margin: 40px 35px 0 40px;
-            width: 400px!important;
+            width: auto!important;
             height: 300px;
             @media (max-width: 992px) {
                 margin: 27px 20px 0 25px;
-                width: 295px!important;
+                // width: 295px!important;
                 height: 221px;
             }
             @media (max-width: 768px) {
                 margin: 27px 30px 0 30px;
-                width: 240px!important;
+                // width: 240px!important;
                 height: 180px;
             }
             @media (max-width: 576px) {
                 margin: 27px 27px 0 29px;
-                width: 215px!important;
+                // width: 215px!important;
                 height: 180px;
             }
             @media (max-width: 575.98px) {
                 margin: 27px auto 0;
-                width: 249px!important;
+                // width: 249px!important;
                 height: 209px;
             }
         }
