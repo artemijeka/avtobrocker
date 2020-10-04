@@ -128,9 +128,9 @@
                 padding: 25px;
                 transform-origin: center;
                 cursor: pointer;
+                line-height: 0.9em;
                 display: inline-flex;
                 justify-content: center;
-                align-items: center;
                 &:hover {
                     transform: rotate(180deg);
                     transition: 300ms ease-in-out;
